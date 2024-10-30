@@ -5,5 +5,11 @@
  * @returns {number} Сумма чётных чисел
  */
 export const solutionFn = (numbers) => {
-    // Ваш код здесь
+    let sum = 0;
+    for (let number of numbers) {
+        if (number % 2 === 0) {
+            sum += number;
+        }
+    }
+    return sum;
 };
